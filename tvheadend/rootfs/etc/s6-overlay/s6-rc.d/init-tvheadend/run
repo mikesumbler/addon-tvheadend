@@ -53,7 +53,8 @@ if check_webgrabplus; then
     bashio::log.info "[Webgrab+] Webgrab+ already installed"
 else
     bashio::log.info "[Webgrab+] No webgrab+ installation found - Installing webgrab+"
-    # NB - believe webgrab should be installed manually from SSH terminal - there is a file that is overwritten that stops install wuthout user input
+    # NB - believe webgrab should be installed manually from SSH terminal - 
+    # there is a file that is overwritten that stops install wuthout user input
     # webgrabplus_install
     chmod +x /usr/bin/restart_addon
     exec /usr/bin/restart_addon
